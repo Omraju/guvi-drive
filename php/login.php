@@ -8,5 +8,4 @@ echo "Please fill all fields";
 echo "Form Submitted Succesfully. The details are:"."<br><br>";
 echo "<b>Email:</b> ".$email."<br>";
 echo "<b>password:</b> ".$password."<br>";
-}
 ?>
