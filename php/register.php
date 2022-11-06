@@ -3,7 +3,7 @@ $email=$_POST['email'];
 $pass1=$_POST['pass1'];
 $pass2=$_POST['pass2'];
 
-if($email == '' || $password == ''){
+if($email == '' || $pass1 == '' || $pass2 == ''){
 echo "Please fill all fields";
 }else{
 echo "Form Submitted Succesfully. The details are:"."<br><br>";
