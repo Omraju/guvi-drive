@@ -6,7 +6,7 @@ $(function () {
 			url: '/php/index.php',
 			data: $('form').serialize(),
 			success: function (data) {
-			  $("#data").html(data);
+			  console.log(data);
 			}
 		});
 		event.preventDefault();
