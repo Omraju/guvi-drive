@@ -1,9 +1,9 @@
 <script>
 $(function () {
-	$('form#Myform').on('login', function (event) {
+	$('form#Myform1').on('login', function (event) {
 		$.ajax({
 			type: 'post',
-			url: 'index.php',
+			url: '/php/index.php',
 			data: $('form').serialize(),
 			success: function (data) {
 			  $("#data").html(data);
