@@ -1,14 +1,24 @@
 <?php
-$email=$_POST['email'];
-$pass1=$_POST['pass1'];
-$pass2=$_POST['pass2'];
+    $conn = mysqli_connect("localhost","root","","guvi");
+    if(!$conn)
+    {
+        die("Connection to DB failed with : ".mysqli_connect_error());
+    }
+    
 
-if($email == '' || $pass1 == '' || $pass2 == ''){
-echo "Please fill all fields";
-}else{
-echo "Form Submitted Succesfully. The details are:"."<br><br>";
-echo "<b>Email:</b> ".$email."<br>";
-echo "<b>password:</b> ".$pass1."<br>";
-echo "<b>confirm password:</b> ".$pass2."<br>";
-}
+       
+        $name = $_POST['email'];
+        $pass = $_POST['pass1'];
+            $sql = "insert into user(`email`, `password`) values('$name','$pass')";
+            $insert = mysqli_query($conn,$sql);
+            if(!$insert)
+                echo '<script>alert("Cannot Create Account")</script>';
+            else
+            {
+                echo '<script>alert("Account created successfully")</script>';
+                header("Location:../index.html");
+            }
+    
+    
+    mysqli_close($conn);
 ?>
