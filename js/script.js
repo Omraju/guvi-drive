@@ -1,4 +1,4 @@
-const form = document.querySelector("form");
+const form = document.querySelector("myform1");
 eField = form.querySelector(".email"),
 eInput = eField.querySelector("input"),
 pField = form.querySelector(".password"),
