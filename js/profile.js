@@ -1,6 +1,6 @@
 <script>
 $(function () {
-	$('form#Myform').on('login', function (event) {
+	$('form#Myform1').on('login', function (event) {
 		$.ajax({
 			type: 'post',
 			url: 'register.php',
