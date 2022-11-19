@@ -1,6 +1,6 @@
 <script>
 $(function () {
-	$('form#Myform1').on('login', function (event) {
+	$('form#Myform1').on('a1', function (event) {
 		$.ajax({
 			type: 'post',
 			url: '/php/index.php',
